@@ -1,5 +1,4 @@
 #!/bin/bash
 source ~/sf__wordpress_staging/user.txt
-ssh $user mkdir ~/sf__wordpress_staging
-scp -r ~/sf__wordpress_staging/* $user:~/sf__wordpress_staging/
+ssh $user git clone https://github.com/UnderT0p/sf__wordpress_experimental
 ssh $user bash ~/sf__wordpress_staging/install_up.sh
